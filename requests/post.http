@@ -1,0 +1,41 @@
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJ5IHN0cmFuZ2VyIiwiaWQiOiI2MTRjZjI0M2MwM2ZkMDMzYzZhZGY0ZDQiLCJpYXQiOjE2MzI0Njg2NjF9.AebQfie-cMDxRuCTk-g3SASc9XH78k7SgVUgKwIM8ic
+
+{
+  "title": "after",
+  "author": "after",
+  "url": "after.com",
+  "likes": 0
+}
+
+###
+
+PUT http://localhost:3001/api/blogs/6149c1040a3f26a46dbbb49c
+Content-Type: application/json
+
+{
+  "author": "new author",
+  "likes": 1000
+}
+
+###
+
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+  "username": "by stranger",
+  "name": "hiasdf",
+  "password": "ihsowieof"
+}
+
+###
+POST http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+  "username": "by stranger",
+  "name": "hiasdf",
+  "password": "ihsowieof"
+}
